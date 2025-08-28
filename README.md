@@ -11,17 +11,17 @@ Decomposition and approximation tools for linear optical unitaries.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Documentation](#documentation)
-- [References](#references)
 - [Citing this work](#citing-this-work)
 - [License](#license)
+- [References](#references)
 
 ## About This Project
 
 `Unitary-Decomp` is a **Python** package for performing various **decompositions** and **approximations** of unitary matrices into planar arrangements of simple optical components. These tools can be used to design and program **universal multiport interferometers** (UMIs), devices capable of implementing arbitrary linear transformations on multiple optical modes. Such devices have numerous applications in communication, imaging, and information processing.
 
 The algorithms implemented in this package cover two main classes of planar UMI architectures: 
-- [Networks of two-mode components](#two-modes-components-network) 
-- [Sequences of multichannel components](#multichannel-interactions-sequence)
+- [Networks of two-mode components](#two-mode-component-networks) 
+- [Sequences of multichannel components](#multichannel-component-sequences)
 
 ### Two-mode Component Networks
 This class of decompositions seeks to express an $N \times N$ unitary matrix as a planar mesh of configurable two-mode unit cells, typically realized using Mach–Zehnder interferometers (MZIs). The first design of this kind was proposed by [Reck *et al.*, 1994](https://doi.org/10.1103/PhysRevLett.73.58), who used a triangular mesh of asymmetric Mach–Zehnder interferometers to implement arbitrary unitary transformations. This design was later improved by [Clements *et al.*, 2016](https://doi.org/10.1364/OPTICA.3.001460), who introduced a more compact rectangular mesh using the same unit cells. [Bell *et al.*, 2021](https://doi.org/10.1063/5.0053421) further compactified the Clements *et al.* design by using a symmetric Mach–Zehnder interferometer as unit cell, which helped reduce the optical depth of the interferometer. 
@@ -247,21 +247,6 @@ The **LPLM algorithm** found in the [`lplm_interferometer`](src/unitary_decomp/l
 - [Decomposition of Unitary Matrices Using Fourier
 Transforms and Phase Masks](papers/LPLM_algorithm_derivation.pdf)
 
-## References
-
-- Girouard, Vincent, Nicolas, Quesada. "Near-optimal decomposition of unitary matrices using phase masks and the discrete Fourier transform". arXiv preprint arXiv:2508.20010. (2025).
-
-- Clements, William R., et al. "Optimal design for universal multiport interferometers." Optica 3.12 (2016): 1460-1465.
-
-- Bell, Bryn A., and Ian A. Walmsley. "Further compactifying linear optical unitaries." Apl Photonics 6.7 (2021).
-
-- López Pastor, Víctor, Jeff Lundeen, and Florian Marquardt. "Arbitrary optical wave evolution with Fourier transforms and phase masks." Optics Express 29.23 (2021): 38441-38450.
-
-- Saygin, M. Yu, et al. "Robust architecture for programmable universal unitaries." Physical review letters 124.1 (2020): 010501.
-
-- Pereira, Luciano, et al. "Minimum optical depth multiport interferometers for approximating arbitrary unitary operations and pure states." Physical Review A 111.6 (2025): 062603.
-
-
 ## Citing This Work
 If you find our research useful in your work, please cite it as
 ```
@@ -276,3 +261,17 @@ If you find our research useful in your work, please cite it as
 ## License
 
 This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+
+## References
+
+- Girouard, Vincent, Nicolas, Quesada. "Near-optimal decomposition of unitary matrices using phase masks and the discrete Fourier transform". arXiv preprint arXiv:2508.20010. (2025).
+
+- Clements, William R., et al. "Optimal design for universal multiport interferometers." Optica 3.12 (2016): 1460-1465.
+
+- Bell, Bryn A., and Ian A. Walmsley. "Further compactifying linear optical unitaries." Apl Photonics 6.7 (2021).
+
+- López Pastor, Víctor, Jeff Lundeen, and Florian Marquardt. "Arbitrary optical wave evolution with Fourier transforms and phase masks." Optics Express 29.23 (2021): 38441-38450.
+
+- Saygin, M. Yu, et al. "Robust architecture for programmable universal unitaries." Physical review letters 124.1 (2020): 010501.
+
+- Pereira, Luciano, et al. "Minimum optical depth multiport interferometers for approximating arbitrary unitary operations and pure states." Physical Review A 111.6 (2025): 062603.
