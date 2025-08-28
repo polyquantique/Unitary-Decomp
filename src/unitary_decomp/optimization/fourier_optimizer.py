@@ -15,8 +15,8 @@
 """
 # Fourier Optimizer
 
-This module provides functions to approximate a target unitary matrix as a sequence of phase masks and DFT matrices
-using numerical optimizations. The function `mask_optimizer` solves a global optimization problem on the phase mask parameters to minimize
+This module provides functions to approximate a target unitary matrix as a sequence of phase masks and DFT matrices.
+The function `mask_optimizer` solves a global optimization problem to minimize
 the infidelity between the target matrix and the approximation. The optimization is performed using the `basinhopping` algorithm
 from `scipy.optimize`, which combines a global search with a local optimizer. The module contains the following key functions:
 
@@ -29,7 +29,7 @@ from `scipy.optimize`, which combines a global search with a local optimizer. Th
 1. Saygin, M. Yu, et al. "Robust architecture for programmable universal unitaries." Physical review letters 124.1 (2020): 010501.
 2. Pereira, Luciano, et al. "Minimum optical depth multiport interferometers for approximating arbitrary unitary operations and pure states." Physical Review A 111.6 (2025): 062603.
 
-**Note**: The method used in this module is adapted from Pereira, Luciano, *et al*. (https://github.com/akiiop/PUMA/tree/main).
+**Note**: The method used in this module is adapted from Pereira *et al.* and can be found at (https://github.com/akiiop/PUMA/tree/main).
 """
 
 from typing import Optional

@@ -18,15 +18,17 @@ This package provides functions to decompose and approximate linear optical tran
 
 The available decompositions include:
 
-- **Clements Interferometer**: Decomposes a unitary matrix into a rectangular mesh of beam splitters and phase shifters.
+- **Clements Interferometer**: Decomposes a unitary matrix into a rectangular mesh of asymmetric Mach-Zehnder interferometers and phase shifters.
 
-- **Bell Interferometer**: Decomposes a unitary matrix into a rectangular mesh of symmetric Mach-Zehnder interferometers.
+- **Bell Interferometer**: Decomposes a unitary matrix into a rectangular mesh of symmetric Mach-Zehnder interferometers and phase shifters.
 
 - **LPLM Interferometer**: Decomposes a unitary matrix into a sequence of 6N + 1 phase masks interleaved with discrete Fourier transforms.
 
-- **Fourier Interferometer**: Decomposes a unitary matrix into a sequence of 4N + 1 or 2N+5 phase masks interleaved with discrete Fourier transforms.
+- **Fourier Interferometer**: Decomposes a unitary matrix into a sequence of 4N + 1 or 2N + 5 phase masks interleaved with discrete Fourier transforms.
 
 For more details on each decomposition, refer to the respective module documentation.
+
+`Unitary-Decomp` also includes optimization routines in the `optimization` subpackage to find approximated decompositions using gradient-based methods.
 """
 
 __version__ = "0.1.0"

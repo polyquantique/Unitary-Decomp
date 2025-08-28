@@ -16,7 +16,7 @@
 # Phase Plot
 
 This module provides a function to plot the phase masks from a Fourier or LPLM decomposition
-as a 2D heatmap. It visualizes the distribution of phases across the masks in the decomposition sequence.
+as a 2D heatmap. It visualizes the distribution of phases across the masks in the decomposition.
 
 ## Example:
 

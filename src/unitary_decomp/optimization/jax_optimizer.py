@@ -13,7 +13,7 @@
 #    limitations under the License.
 
 """
-# JAX Optimizer for Unitary Decompositions
+# JAX Optimizer
 
 This module provides functions to optimize a sequence of phase masks to approximate a target unitary matrix using JAX.
 The linear interferometer is modeled as a neural network which is trained to learn a target unitary matrix by

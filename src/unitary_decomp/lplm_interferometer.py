@@ -15,9 +15,13 @@
 """
 # LPLM Interferometer Module
 
-This module provides functions to perform the López Pastor, Lundeen and Marquardt (LPLM) decomposition of a unitary matrix into a sequence of phase masks interleaved with discrete Fourier transforms (DFT) matrices.
-It includes functions to generate the necessary mask sequences, extract layer parameters from a Clements decomposition, and reconstruct the unitary matrix from its decomposition.
-The algorithm works for unitary matrices of even dimension and generates a sequence of 6N + 1 phase masks for a unitary matrix of dimension N.
+This module provides functions to perform the López Pastor, Lundeen and Marquardt (LPLM) decomposition of a unitary matrix into a sequence of
+6N+1 phase masks interleaved with discrete Fourier transforms (DFT) matrices.
+
+The module consists of the following main functions:
+- `lplm_decomposition`: Decomposes a unitary matrix using the LPLM decomposition.
+- `circuit_reconstruction`: Reconstructs the unitary matrix from the decomposition
+
 For more details on the LPLM decomposition, see references [1] and [2].
 
 ### References

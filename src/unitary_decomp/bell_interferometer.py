@@ -15,19 +15,20 @@
 """
 # Bell Interferometer
 
-This module provides functions to perform the Bell decomposition of a unitary matrix into a rectangular mesh
-of symmetric Mach-Zehnder interferometers (sMZIs) and phase-shifters. The Bell decomposition is an improved version of the Clements decomposition,
+This module provides functions to perform the Bell *et al.* decomposition of a unitary matrix into a rectangular mesh
+of symmetric Mach-Zehnder interferometers and phase-shifters. The Bell decomposition is an improved version of the Clements decomposition,
 which allows for a more compact representation of linear optical unitaries. The module includes the following functions:
 
-- `bell_decomposition`: Decomposes a unitary matrix using the Bell decomposition.
+- `bell_decomposition`: Decomposes a unitary matrix using the Bell *et al.* decomposition.
 - `circuit_reconstruction`: Reconstructs the unitary matrix from the Bell decomposition.
 
-The Bell decomposition is described in [1].
+The Bell *et al.* decomposition is described in [1].
 
 ### References
 1. Bell, Bryn A., and Ian A. Walmsley. "Further compactifying linear optical unitaries." Apl Photonics 6.7 (2021).
 
-**Note**: The code used in this module is adapted from [*strawberryfields*](https://github.com/XanaduAI/strawberryfields/blob/master/strawberryfields/decompositions.py). It was introduced in [this PR by Jake Bulmer and Yuan Yao](https://github.com/XanaduAI/strawberryfields/pull/584#issue-894649549).
+**Note**: The code used in this module is adapted from [*strawberryfields*](https://github.com/XanaduAI/strawberryfields/blob/master/strawberryfields/decompositions.py).
+It was introduced in [this PR by Jake Bulmer and Yuan Yao](https://github.com/XanaduAI/strawberryfields/pull/584#issue-894649549).
 """
 
 from collections import defaultdict
