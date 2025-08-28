@@ -1,4 +1,4 @@
-[![a](https://img.shields.io/static/v1?label=arXiv&message=arXiv:2508.20010&color=active&style=flat-square)](https://arxiv.org/abs/arXiv:2508.20010)
+[![a](https://img.shields.io/static/v1?label=arXiv&message=2508.20010&color=active&style=flat-square)](https://arxiv.org/abs/arXiv:2508.20010)
 
 # Unitary-Decomp
 
