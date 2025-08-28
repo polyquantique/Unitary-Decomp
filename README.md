@@ -1,3 +1,5 @@
+[![a](https://img.shields.io/static/v1?label=arXiv&message=arXiv:2508.20010&color=active&style=flat-square)](https://arxiv.org/abs/arXiv:2508.20010)
+
 # Unitary-Decomp
 
 Decomposition algorithms for linear optical unitaries.
@@ -169,11 +171,20 @@ The function `circuit_reconstruction` computes the matrix given by a `LplmDecomp
 >>> print(np.allclose(U, reconstructed_matrix))
 True
 ```
+## How to cite this work
+If you find our research useful in your work please cite it as:
+```
+@article{girouard2025,
+  title={Near-optimal decomposition of unitary matrices using phase masks and the discrete Fourier transform},
+  author={Girouard, Vincent and Quesada, Nicol{\'a}s},
+  journal={arXiv preprint arXiv:2508.20010},
+  year={2025}
+}
+```
 
+## Documentation
 
-## Papers
-
-The **LPLM algorithm** found in the [`lplm_interferometer`](src/unitary_decomp/lplm_interferometer.py) module was adapted from [López Pastor *et al.*, 2021](https://doi.org/10.1364/OE.432787) and uses a different sequence of phase masks than the original paper. A comprehensive derivation of this new sequence can be found in the following document:
+The **LPLM algorithm** found in the [`lplm_interferometer`](src/unitary_decomp/lplm_interferometer.py) module was adapted from [López Pastor *et al.*, 2021](https://doi.org/10.1364/OE.432787) and uses a slightly different sequence of phase masks than the original paper. A comprehensive derivation of this new sequence can be found in the following document:
 
 - [Decomposition of Unitary Matrices Using Fourier
 Transforms and Phase Masks](papers/LPLM_algorithm_derivation.pdf)
