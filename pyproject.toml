@@ -1,11 +1,11 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "unitary_decomp"
 dynamic = ["version"]
-description = "Decomposition algorithms for linear optical unitaries."
+description = "Decompositions and approximations of linear optical unitaries."
 authors = [
     { name="Vincent Girouard", email="vincent-2.girouard@polymtl.ca" }
 ]
@@ -26,11 +26,11 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/polyquantique/Universal-Interferometers"
+Homepage = "https://github.com/polyquantique/Unitary-Decomp"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-packages = ["unitary_decomp"]
+packages = { find = {} }
 
 [tool.setuptools.dynamic]  
 version = {attr = "unitary_decomp.__version__"}
