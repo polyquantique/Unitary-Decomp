@@ -205,6 +205,17 @@ The function `circuit_reconstruction` computes the matrix given by a `FourierDec
 >>> print(np.allclose(U, reconstructed_matrix))
 True
 ```
+## How to cite this work
+If you find our research useful in your work please cite it as:
+```
+@article{girouard2025,
+  title={Near-optimal decomposition of unitary matrices using phase masks and the discrete Fourier transform},
+  author={Girouard, Vincent and Quesada, Nicol{\'a}s},
+  journal={arXiv preprint arXiv:2508.20010},
+  year={2025}
+}
+```
+
 
 ### 3. `optimization.jax_optimizer` module
 
@@ -239,6 +250,7 @@ FourierDecomp
 ```
 
 The final matrix can be reconstructed using the `circuit_reconstruction` function from the `fourier_interferometer` module.
+
 
 ## Documentation
 
