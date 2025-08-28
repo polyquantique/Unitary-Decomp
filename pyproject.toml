@@ -7,7 +7,8 @@ name = "unitary_decomp"
 dynamic = ["version"]
 description = "Decompositions and approximations of linear optical unitaries."
 authors = [
-    { name="Vincent Girouard", email="vincent-2.girouard@polymtl.ca" }
+    { name="Vincent Girouard", email="vincent-2.girouard@polymtl.ca" },
+    { name="Nicolás Quesada", email="nicolas.quesada@polymtl.ca" },
 ]
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -22,15 +23,16 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest>=7.0",
+    "pytest-cov>=4.0.0",
     "black>=23.0",
+    "isort",
 ]
 
 [project.urls]
 Homepage = "https://github.com/polyquantique/Unitary-Decomp"
 
-[tool.setuptools]
-package-dir = {"" = "src"}
-packages = { find = {} }
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.setuptools.dynamic]  
 version = {attr = "unitary_decomp.__version__"}

@@ -15,7 +15,7 @@
 """
 # Matrix operations
 
-This module provides various matrix definitions and matrix transformations used in the decomposition of unitary matrices
+This module provides various matrix definitions and transformations used in the decomposition of unitary matrices
 using Fourier transforms and phase masks.
 
 ### References

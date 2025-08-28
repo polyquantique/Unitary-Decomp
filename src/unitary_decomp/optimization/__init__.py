@@ -16,6 +16,10 @@
 # Optimization subpackage
 
 This subpackage provides optimization routines for approximating unitary matrices using phase masks and discrete Fourier transforms.
+
+The `optimization` subpackage contains two modules:
+- `fourier_optimizer`: Uses the basin-hopping function from `scipy.optimize` to find the phase masks that minimize the infidelity with respect to a target unitary.
+- `jax_optimizer`: Uses the `Jax` and `Optax` libraries to find the phase masks that minimize the infidelity with a target unitary efficiently.
 """
 
 from unitary_decomp.optimization.fourier_optimizer import mask_optimizer

@@ -15,16 +15,16 @@
 """
 # Clements interferometer module.
 
-This module provides functions to perform the decomposition of unitary matrices into a mesh of beam splitters and phase shifters, as well as to reconstruct the unitary matrix from the decomposition.
-This algorithm can be used to configure universal multiport interferometers based on the design of Clements *et al*. (2016).
+This module provides functions to perform the Clements *et al.* decomposition of a unitary matrix into a planar mesh of
+asymmetric Mach-Zehnder interferometers and phase shifters, as well as to reconstruct the unitary matrix from the decomposition.
 
 The main functions are:
-- `beam_splitter`: Returns the matrix form of a parametric beam splitter acting on two consecutive channels in a multi-mode circuit. Unit cell used in the paper by Clements *et al*.
-- `mzi_matrix`: Returns the exact matrix form of a Mach-Zehnder interferometer with an external phase shifter acting on two consecutive channels in a multi-mode circuit.
-- `clements_decomposition`: Decomposes a unitary matrix into a sequence of beam splitters (`beam_splitter`) and a diagonal unitary matrix of single-mode phase-shifts.
-- `mzi_decomposition`: Decomposes a unitary matrix into a sequence of Mach-Zehnder interferometers (`mzi_matrix`) and a diagonal unitary matrix of single-mode phase-shifts.
+- `clements_decomposition`: Decomposes a unitary matrix into a rectangular network of variable beam splitters (`beam_splitter`).
+- `mzi_decomposition`: Decomposes a unitary matrix into a rectangular network of asymmetric Mach-Zehnder interferometers (`mzi_matrix`).
 - `circuit_reconstruction`: Reconstructs the unitary matrix from the decomposition obtained with `clements_decomposition`.
 - `mzi_circuit_reconstruction`: Reconstructs the unitary matrix from the decomposition obtained with `mzi_decomposition`.
+
+The Clements *et al.* decomposition is described in detail in [1].
 
 ### References
 1. Clements, William R., et al. "Optimal design for universal multiport interferometers." Optica 3.12 (2016): 1460-1465.

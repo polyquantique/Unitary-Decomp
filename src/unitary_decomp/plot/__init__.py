@@ -15,7 +15,7 @@
 """
 # Plot subpackage
 
-This subpackage provides plotting modules for visualization of unitary decompositions.
+This subpackage provides plotting modules for visualization and characterization of unitary decompositions.
 
 ### Modules
 - `phases_plot`: Module for plotting phase masks in a Fourier decomposition on a 2D color grid.
