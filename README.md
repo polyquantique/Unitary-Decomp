@@ -1,5 +1,4 @@
 [![Paper](https://img.shields.io/badge/Paper-Read%20Article-blue)](https://doi.org/10.1364/JOSAB.577579)
-
 [![codecov](https://codecov.io/gh/polyquantique/phaseshift/graph/badge.svg?token=X2CJ5NYDVW)](https://codecov.io/gh/polyquantique/phaseshift)
 
 # PhaseShift
